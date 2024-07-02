@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+}
+header{
+    width: 100%;
+    max-width: 1100;
+    background-color: #0d0d0d;
+    position: fixed;
+    display: inline-flex;
+    justify-content: space-around;
+    opacity: 70%;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header nav{
+    background-color: #0d0d0d;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 20px;
+    font-family: "Fjalla One", sans-serif;
+}
+nav a{
+    padding: 10px;
+    background-color: #0d0d0d;
+    font-size: 22px;
+    font-weight: bold;
+    color: #F0F2F2;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.2s ease-in;
+}
+nav a:hover{
+    background-color: #732222;
+    border-radius: 25px;
+}
+nav #catalogo{
+    background-color: #732222;
+    color: #F0F2F2;
+    border-radius: 5px;
+    padding: 20px;
+    transition: background-color 0.2s linear;
+}
+nav #catalogo:hover{
+    background-color: #F0F2F2;
+    color: #0d0d0d;
+}
+header h1{
+    background-color: #0d0d0d;
+    background: linear-gradient(to left, #0d0d0d, #F0F2F2);
+    background-clip: text;
+    color: transparent;
+    display: inline-flex;
+    align-items: center;
+}
+
+.publicaciones{
+    position: relative;
+    top: 120px;
+}
+.titulo h1{
+    color: #ff5722;
+    font-family: "Fjalla One", sans-serif;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #0d0d0d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auto {
+    text-align: center;
+    font-family: "Staatliches", sans-serif;
+    color: #F0F2F2;
+}
+
+.auto img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.auto img:hover {
+    transform: scale(1.05);
+}
+
+.auto p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #F0F2F2;
+}
+
+.auto h2{
+    color: #ff5722;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.footer-container{
+    width: 100%;
+    max-width: 1100;
+    background-color: #0d0d0d;
+    position: bottom;
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    background-color: #0d0d0d;
+    margin-top: 20%;
+}
+@media (min-width:768px) {
+    .footer-container {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.nosotros h2{
+    font-family: "Fjalla One", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #732222;
+    text-align: center;
+}
+.nosotros p{
+    color: #F0F2F2;
+    line-height: 1.6;
+    font-family: "NTR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+.newsletter h2{
+    font-family: "Fjalla One", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #732222;
+    text-align: center;
+}
+
+.subscribe-form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border:#F0F2F2;
+    font-family: "NTR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background-color: #732222;
+}
+
+.redes h2{
+    font-family: "Fjalla One", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #732222;
+    text-align: center;
+}
+.redes ul{
+    margin-top: 25px;
+}
+.redes li{
+    display: inline;
+    margin-left: 15%;
+}
