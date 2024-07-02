@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="poner la imagen">
+    <title>FORMULARIO</title>
+    <link rel="icon" type="png" href="imagenes/pistonicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Fjalla+One&family=NTR&family=Staatliches&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=NTR&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=NTR&family=Staatliches&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=NTR&family=Staatliches&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formulario1.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/VITESSENGINElogo.jpg" alt="Logo principal"  height="120" style="background-color: transparent;">
+        <nav>
+            <a href="#">INICIO</a>
+            <a href="#" id="vender">FORMULARIO</a>
+            <a href="#">MODIFICAR</a>
+            <a href="#">ELIMINAR</a>
+            <a href="#">CATALOGO</a>
+        </nav>
+        <h1>VITESSENGINE</h1>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>PUBLIQUE SU AUTOMOVIL</h1>
+            <h3>Completar el siguiente formulario para publicar su automovil en nuestra pagina</h3>
+        </div>
+        <section class="conteiner">
+            <form  name="formulario" action="#" method="POST">
+                
+            
+                <div class="auto">
+                <h2 class="marco">SOBRE EL AUTO</h2>
+                <label for="marca"><b>MARCA</b>:</label>
+                <input type="text" id="marca" name="marca">
+                <label for="año"><b>AÑO</b>:</label>
+                <input type="text" id="anio" name="marca">
+                <label for="tipo"><b>TIPO DE AUTO</b>:</label>
+                <input type="text" id="tipo" name="tipo">
+                <br>
+                </select><br>
+                <label for="transmision">TRANSMISION:</label>
+                <select name="trasmision" id="transmision">
+                    <option value="0" disabled selected>Seleccione una opcion</option>
+                    <option value="1">Manual</option>
+                    <option value="2">Automatica</option>
+                    <option value="3">Doble Embrague</option>
+                    <option value="4">Manual automatizada</option>
+                    <option value="5">Manual secuencial</option>
+                    <option value="6">Hidraulica</option>
+                </select><br>
+                <label for="combustible" id="comb"><b>COMPUSTIBLE</b>:</label>
+                <input type="checkbox" name="Gasolina" value="1" class="elegir"><b class="color">GASOLINA</b>
+                <input type="checkbox" name="Diesel" value="2" class="elegir"> <b class="color">DIESEL</b>
+                <input type="checkbox" name="Electrico" value="3" class="elegir"> <b class="color">ELECTRICO </b>  <br>
+                
+                <label for="auto">FOTOS DEL AUTO:</label>
+                <input type="file" class="imagen">
+                
+                </div>
+                
+                <div class="usuario">
+                <h2 class="marco">SOBRE EL VENDEDOR</h2>
+                <label for="num">NUMERO DE TELEFONO:</label>
+                <input type="number" id="num" name="num" ><br>
+                
+                </div>
+                <br>
+                <b id="error"></b>
+                <br>
+                <div class="botones">
+                <input type="button" class="boton" id="enviar" value="ENVAR" onclick="validarfor()">
+                <input type="reset" class="boton" value="RESTABLECER FORMULARIO">
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr style="position: relative; top: 150px;" >
+        <div class="footer-container">
+            <div class="nosotros">
+                <h2>NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deleniti rem optio delectus nulla. Magnam molestias sequi odio quam debitis? Fuga provident minima aspernatur facilis aut impedit, ea aliquid libero!
+                </p>
+            </div>
+            <div class="newsletter">
+                <h2>NEWSLETTER</h2>
+                <form class="form" action="#" method="post" >
+                    <input type="email" name="email" placeholder=" Ingresa tu email" required class="email">
+                    <button class="miboton" type="submit">Suscribte</button>
+                </form>
+            </div>
+            <div class="redes">
+                <h2>REDES</h2>
+                <ul>
+                    <li><a href="#" class="icono"><img src="imagenes/Instagram.png" height="45" target"_blank" class="social"></a></li>
+                    <li><a href="#" class="icono"><img src="imagenes/Whatsapp.png" height="45" target"_blank" class="social"></a></li>
+                    <li><a href="#" class="icono"><img src="imagenes/Facebook.png" height="45" target"_blank" class="social"></a></li>
+                    <li><a href="#" class="icono"><img src="imagenes/X.png" height="45" target"_blank" class="social"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
