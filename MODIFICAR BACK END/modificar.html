@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vitessengine</title>
+    <link rel="icon" type="png" href="img/pistonfavicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Fjalla+One&family=NTR&family=Staatliches&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=NTR&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=NTR&family=Staatliches&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=NTR&family=Staatliches&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/VITESSENGINE logo.png" alt="Logo principal" height="120" style="background-color: transparent;">
+        <nav>
+            <a href="#">INICIO</a>
+            <a href="#">FORMULARIO</a>
+            <a href="#" id="modificar">MODIFICAR</a>
+            <a href="#">ELIMINAR</a>
+            <a href="#">CATALOGO</a>
+        </nav>
+        <h1>VITESSENGINE</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h1>Ingresa tu código</h1>
+            <form id="codigoForm">
+                <input type="text" id="codigo" name="codigo" placeholder="Ingresa el código aca" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="titulo">
+            <h3>Modifica el siguiente formulario para publicar tu auto.</h3>
+        </div>
+        <section class="conteiner">
+            <form  name="formulario" action="#" method="POST">
+                <div class="auto">
+                <h2 class="marco">SOBRE EL AUTO</h2>
+                <label for="marca"><b>MARCA</b>:</label>
+                <input type="text" id="marca" name="marca">
+                <label for="año"><b>AÑO</b>:</label>
+                <input type="text" id="anio" name="marca">
+                <label for="precio"><b>PRECIO</b>:</label>
+                <input type="text" id="tipo" name="tipo">
+                <br>
+                </select><br>
+                <label for="transmision">TRANSMISION:</label>
+                <select name="trasmision" id="transmision">
+                    <option value="0" disabled selected>Seleccione una opcion</option>
+                    <option value="1">Manual</option>
+                    <option value="2">Automatica</option>
+                    <option value="3">Doble Embrague</option>
+                    <option value="4">Manual automatizada</option>
+                    <option value="5">Manual secuencial</option>
+                    <option value="6">Hidraulica</option>
+                </select><br>
+                <label for="combustible" id="comb"><b>COMPUSTIBLE</b>:</label>
+                <input type="checkbox" name="Gasolina" value="1" class="elegir"><b class="color">GASOLINA</b>
+                <input type="checkbox" name="Diesel" value="2" class="elegir"> <b class="color">DIESEL</b>
+                <input type="checkbox" name="Electrico" value="3" class="elegir"> <b class="color">ELECTRICO </b>  <br>
+                
+                <label for="auto">FOTOS DEL AUTO:</label>
+                <input type="file" class="imagen">
+                
+                </div>
+                
+                <div class="usuario">
+                <h2 class="marco">SOBRE EL VENDEDOR</h2>
+                <label for="numero"><b>NUMERO DE TELEFONO:</b></label>
+                <input type="text" id="numero" name="numero de telefono">
+                
+                </div>
+                <br>
+                <b id="error"></b>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="submit">Restablecer</button>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr style="position: relative; top: 200px;">
+        <div class="footer-container">
+            <div class="nosotros">
+                <h2>NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam eius repellat temporibus ducimus numquam repudiandae, minus nam ad laudantium voluptatibus provident.</p>
+            </div>
+            <div class="newsletter">
+                    <h2>NEWSLETTER</h2>
+                    <form action="#" method="post" class="subscribe-form">
+                        <input type="email" name="email" placeholder="Ingresa tu email" required>
+                        <button type="submit">Suscribir</button>
+                    </form>
+            </div>
+            <div class="redes">
+                <h2>REDES</h2>
+                <ul>
+                    <li><a href="#" class="icono"><img src="img/instagram-white-icon.png" height="25" target="_blank"></a></li>
+                    <li><a href="#" class="icono"><img src="img/whatsapp-white-icon.png" height="25" target="_blank"></a></li>
+                    <li><a href="#" class="icono"><img src="img/facebook-app-round-white-icon.png" height="25" target="_blank"></a></li>
+                    <li><a href="#" class="icono"><img src="img/x-social-media-white-icon.png" height="25" target="_blank"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
