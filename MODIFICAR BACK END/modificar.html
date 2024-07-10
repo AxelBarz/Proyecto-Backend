@@ -17,11 +17,11 @@
     <header>
         <img src="img/VITESSENGINE logo.png" alt="Logo principal" height="120" style="background-color: transparent;">
         <nav>
-            <a href="#">INICIO</a>
-            <a href="#">FORMULARIO</a>
-            <a href="#" id="modificar">MODIFICAR</a>
-            <a href="#">ELIMINAR</a>
-            <a href="#">CATALOGO</a>
+            <a href="../INICIObackend.html">INICIO</a>
+            <a href="../Formulario/formulario1.html">FORMULARIO</a>
+            <a href="modificar.html" id="modificar">MODIFICAR</a>
+            <a href="../ELIMINAR BACK END/eliminar.html">ELIMINAR</a>
+            <a href="../CATALOGO BACK END/listado.html">CATALOGO</a>
         </nav>
         <h1>VITESSENGINE</h1>
     </header>
@@ -30,59 +30,54 @@
         <div class="container">
             <h1>Ingresa tu código</h1>
             <form id="codigoForm">
-                <input type="text" id="codigo" name="codigo" placeholder="Ingresa el código aca" required>
-                <button type="submit">Enviar</button>
+                <input type="text" id="codigo" placeholder="Ingresa el código aca" required>
+                <button type="submit">Elegir publicacion</button>
             </form>
         </div>
-        <div class="titulo">
-            <h3>Modifica el siguiente formulario para publicar tu auto.</h3>
-        </div>
-        <section class="conteiner">
-            <form  name="formulario" action="#" method="POST">
+
+        <div class="conteiner" style="display: none;">
+                <h3 class="titulo">Modifica el siguiente formulario para publicar tu auto.</h3>
+            <form  id="formulario">
                 <div class="auto">
                 <h2 class="marco">SOBRE EL AUTO</h2>
                 <label for="marca"><b>MARCA</b>:</label>
-                <input type="text" id="marca" name="marca">
-                <label for="año"><b>AÑO</b>:</label>
-                <input type="text" id="anio" name="marca">
+                <input type="text" id="marca" name="marca" required>
+                <label for="anio"><b>AÑO</b>:</label>
+                <input type="text" id="anio" name="anio" required>
                 <label for="precio"><b>PRECIO</b>:</label>
-                <input type="text" id="tipo" name="tipo">
+                <input type="text" id="precio" name="precio" required>
                 <br>
                 </select><br>
                 <label for="transmision">TRANSMISION:</label>
-                <select name="trasmision" id="transmision">
+                <select name="trasmision" id="transmision" required>
                     <option value="0" disabled selected>Seleccione una opcion</option>
-                    <option value="1">Manual</option>
-                    <option value="2">Automatica</option>
-                    <option value="3">Doble Embrague</option>
-                    <option value="4">Manual automatizada</option>
-                    <option value="5">Manual secuencial</option>
-                    <option value="6">Hidraulica</option>
-                </select><br>
-                <label for="combustible" id="comb"><b>COMPUSTIBLE</b>:</label>
-                <input type="checkbox" name="Gasolina" value="1" class="elegir"><b class="color">GASOLINA</b>
-                <input type="checkbox" name="Diesel" value="2" class="elegir"> <b class="color">DIESEL</b>
-                <input type="checkbox" name="Electrico" value="3" class="elegir"> <b class="color">ELECTRICO </b>  <br>
-                
-                <label for="auto">FOTOS DEL AUTO:</label>
-                <input type="file" class="imagen">
-                
+                    <option value="Manual">Manual</option>
+                    <option value="Automatica">Automatica</option>
+                    <option value="Doble Embrague">Doble Embrague</option>
+                    <option value="Manual Automatizada">Manual automatizada</option>
+                    <option value="Manual Secuencial">Manual secuencial</option>
+                    <option value="Hidraulica">Hidraulica</option>
+                </select>
+                <label for="combustible">COMBUSTIBLE</label>
+                <input type="text" id="combustible" name="combustible"><br>
                 </div>
                 
                 <div class="usuario">
                 <h2 class="marco">SOBRE EL VENDEDOR</h2>
                 <label for="numero"><b>NUMERO DE TELEFONO:</b></label>
-                <input type="text" id="numero" name="numero de telefono">
-                
+                <input type="text" id="numero" name="numero" required>
                 </div>
-                <br>
-                <b id="error"></b>
-                <br>
-                <button type="submit">Enviar</button>
-                <button type="submit">Restablecer</button>
+                <hr>
+                <div id="elegir">
+                    <button type="submit" id="enviar">Guardar cambios</button>
+                    <button><a href="../INICIObackend.html">Volver menu</a></button>
+                </div>
+
                 
             </form>
         </section>
+        <script src="modificar2.js"></script>
+        <!-- <script src="modificar.js"></script> -->
     </main>
 
     <footer>

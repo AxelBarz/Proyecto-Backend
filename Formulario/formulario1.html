@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="png" href="poner la imagen">
     <title>FORMULARIO</title>
@@ -18,11 +19,11 @@
     <header>
         <img src="imagenes/VITESSENGINElogo.jpg" alt="Logo principal"  height="120" style="background-color: transparent;">
         <nav>
-            <a href="#">INICIO</a>
-            <a href="#" id="vender">FORMULARIO</a>
-            <a href="#">MODIFICAR</a>
-            <a href="#">ELIMINAR</a>
-            <a href="#">CATALOGO</a>
+            <a href="../INICIObackend.html">INICIO</a>
+            <a href="formulario1.html" id="vender">FORMULARIO</a>
+            <a href="../MODIFICAR BACK END/modificar.html">MODIFICAR</a>
+            <a href="../ELIMINAR BACK END/eliminar.html">ELIMINAR</a>
+            <a href="../CATALOGO BACK END/listado.html">CATALOGO</a>
         </nav>
         <h1>VITESSENGINE</h1>
     </header>
@@ -32,55 +33,55 @@
             <h3>Completar el siguiente formulario para publicar su automovil en nuestra pagina</h3>
         </div>
         <section class="conteiner">
-            <form  name="formulario" action="#" method="POST">
-                
-            
+            <form  id="formulario" enctype="multipart/form-data">
                 <div class="auto">
                 <h2 class="marco">SOBRE EL AUTO</h2>
                 <label for="marca"><b>MARCA</b>:</label>
-                <input type="text" id="marca" name="marca">
-                <label for="año"><b>AÑO</b>:</label>
-                <input type="text" id="anio" name="marca">
-                <label for="tipo"><b>PRECIO</b>:</label>
-                <input type="text" id="tipo" name="tipo">
+                <input type="text" id="marca" name="marca" required>
+                <label for="anio"><b>AÑO</b>:</label>
+                <input type="text" id="anio" name="anio" required>
+                <label for="precio"><b>PRECIO</b>:</label>
+                <input type="text" id="precio" name="precio" required>
                 <br>
+                <!-- <label for="transmision">TRANSMISION</label>
+                <input type="text" id="transmision" name="transmision" required><br> -->
                 </select><br>
                 <label for="transmision">TRANSMISION:</label>
-                <select name="trasmision" id="transmision">
+                <select name="transmision" id="transmision">
                     <option value="0" disabled selected>Seleccione una opcion</option>
-                    <option value="1">Manual</option>
-                    <option value="2">Automatica</option>
-                    <option value="3">Doble Embrague</option>
-                    <option value="4">Manual automatizada</option>
-                    <option value="5">Manual secuencial</option>
-                    <option value="6">Hidraulica</option>
+                    <option value="Manual">Manual</option>
+                    <option value="Automatica">Automatica</option>
+                    <option value="Doble Embrague">Doble Embrague</option>
+                    <option value="Manual automatizada">Manual automatizada</option>
+                    <option value="Manual secuencial">Manual secuencial</option>
+                    <option value="Hidraulica">Hidraulica</option>
                 </select><br>
-                <label for="combustible" id="comb"><b>COMPUSTIBLE</b>:</label>
-                <input type="checkbox" name="Gasolina" value="1" class="elegir"><b class="color">GASOLINA</b>
-                <input type="checkbox" name="Diesel" value="2" class="elegir"> <b class="color">DIESEL</b>
-                <input type="checkbox" name="Electrico" value="3" class="elegir"> <b class="color">ELECTRICO </b>  <br>
-                
-                <label for="auto">FOTOS DEL AUTO:</label>
-                <input type="file" class="imagen">
+                <label for="combustible">COMBUSTIBLE</label>
+                <input type="text" id="combustible" name="combustible"><br>
+                <!-- <label><b>COMBUSTIBLE</b></label>
+                <input type="checkbox" name="combustible" id="Gasolina" value="1" class="elegir">
+                <label for="Gasolina"><b class="color">GASOLINA</b></label>
+                <input type="checkbox" name="combustible" id="Diesel" value="2" class="elegir"> 
+                <label for="Diesel"><b class="color">DIESEL</b></label>
+                <input type="checkbox" name="combustible" id="Electrico" value="3" class="elegir"> 
+                <label for="Electrico"><b class="color">ELECTRICO </b></label><br> -->
                 
                 </div>
                 
                 <div class="usuario">
                 <h2 class="marco">SOBRE EL VENDEDOR</h2>
-                <label for="num">NUMERO DE TELEFONO:</label>
-                <input type="number" id="num" name="num" ><br>
+                <label for="numetel">NUMERO DE TELEFONO:</label>
+                <input type="number" id="numetel" name="numetel" ><br>
                 
                 </div>
-                <br>
-                <b id="error"></b>
-                <br>
                 <div class="botones">
-                <input type="button" class="boton" id="enviar" value="ENVAR" onclick="validarfor()">
+                <button type="submit" id="boton">AGREGAR AUTO</button>
                 <input type="reset" class="boton" value="RESTABLECER FORMULARIO">
                 </div>
                 
             </form>
         </section>
+        <script src="agregar.js"></script>
     </main>
     <footer>
         <hr style="position: relative; top: 150px;" >

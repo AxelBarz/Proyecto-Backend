@@ -17,20 +17,33 @@
     <header>
         <img src="img/VITESSENGINE logo.png" alt="Logo principal" height="120" style="background-color: transparent;">
         <nav>
-            <a href="#">INICIO</a>
-            <a href="#">FORMULARIO</a>
-            <a href="#">MODIFICAR</a>
-            <a href="#" id="eliminar">ELIMINAR</a>
-            <a href="#">CATALOGO</a>
+            <a href="../INICIObackend.html">INICIO</a>
+            <a href="../Formulario/formulario1.html">FORMULARIO</a>
+            <a href="../MODIFICAR BACK END/modificar.html">MODIFICAR</a>
+            <a href="eliminar.html" id="eliminar">ELIMINAR</a>
+            <a href="../CATALOGO BACK END/listado.html">CATALOGO</a>
         </nav>
         <h1>VITESSENGINE</h1>
     </header>
     
     <div class="container">
         <h1>LISTADO DE PUBLICACIONES</h1>
-        <ul class="item-list">
-        </ul>
+        <table id="item-list">  
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Marca</th>
+                    <th>Precio (Pesos)</th>
+                    <th>Num. Telefono</th>
+                    <th id="eliminar">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
+
+    <script src="eliminar.js"></script>
 
     <footer>
         <hr style="position: relative; top: 200px;">

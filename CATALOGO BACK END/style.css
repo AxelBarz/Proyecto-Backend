@@ -66,42 +66,57 @@ header h1{
     font-family: "Fjalla One", sans-serif;
     text-align: center;
 }
-.grid {
+#grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
-    background-color: #0d0d0d;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.auto {
+.autos{
+    border: 2px solid white;
+    height: 300px;
+    box-shadow: 0 0 10px white;
+}
+.autos a{
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 12px;
+    color: #F0F2F2;
+    font-family: 'Courier New', Courier, monospace;
+}
+.autos .marca{
+    font-size: 40px;
+    margin-right: 20px;
+    margin-left: 15px;
     text-align: center;
+    color: #F0F2F2;
+    border-bottom: 2px solid white;
     font-family: "Staatliches", sans-serif;
+}
+
+.autos p{
+    font-size: 40px;
+    text-align: center;
     color: #F0F2F2;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
-
-.auto img {
-    max-width: 100%;
-    border-radius: 10px;
-    transition: transform 0.2s;
-}
-
-.auto img:hover {
-    transform: scale(1.05);
-}
-
-.auto p {
-    margin: 10px 0 0;
-    font-size: 16px;
+.autos .num{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
     color: #F0F2F2;
+    letter-spacing: 2px;
+}
+#pre{
+    background-color: #F0F2F2;
+    color: #0d0d0d;
+    padding: 10px 0;
 }
 
-.auto h2{
-    color: #ff5722;
-    font-family: "Fjalla One", sans-serif;
-}
 
 .footer-container{
     width: 100%;

@@ -135,9 +135,6 @@ input[type="text"], input[type="number"],input {
 label, input, select{
     margin-bottom: 20px;
 }
-#comb{
-    top: 0;
-}
 
 .botones{
     width: 100%;
@@ -151,9 +148,9 @@ label, input, select{
     border: 3px solid #ccc;
 }
 
-.boton{
+#boton, input[type="reset"]{
     height: 50px;
-    width: 21%;
+    width: 25%;
     cursor: pointer;
     background-color: #595956;
     color:#f0f2f2;
@@ -162,20 +159,18 @@ label, input, select{
     border:none;
     transition: all 0.2s linear;
 }
-.elegir{
+#boton:hover{
+    background-color: #006400;
+}
+input[type="reset"]:hover{
+    background-color: #8B0000;;
+}
+#boton{
     position: relative;
-    top: 7px;
-    margin: 0 5px;
-    margin-bottom: 40px;
+    top: 5px;
+    border-radius: 5px;
 }
-.color{
-    font-size: 20px;
-    color: #ccc;
-}
-.imagen{
-    background-color: #F0F2F2;
-    color: #0d0d0d;
-}
+
 footer{
     height: 200px;
     background-color: #732222;

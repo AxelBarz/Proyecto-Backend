@@ -74,33 +74,49 @@ h1 {
     font-family: "Fjalla One", sans-serif;
 }
 
-.item-list {
-    list-style-type: none;
+#item-list {
+    width: 100%;
     padding: 0;
     margin: 0;
     color: #ddd;
     font-family: "NTR", sans-serif;
-}
 
-.item {
+}
+th{
+    border-bottom: 2px dotted white;
+    border-right: 2px solid white;
+    font-size: 30px;
+}
+#eliminar{
+    border-right: none;
+}
+td{
+    padding: 10px 0;
+    font-size: 20px;
+    font-family: "Fjalla One", sans-serif;
+    background-color: #bbbbbb;
+    letter-spacing: 2px;
+    color:#c73424;
+}
+#el{
+    width: 50%;
+    height: 40px;
+    border-radius: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-.delete-btn {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
     cursor: pointer;
+    background-color: #732222;
+    border: none;
+    transition: background-color 0.2s linear;
 }
+#el:hover{
+    background-color: #0d0d0d;
+}
+button img{
+    transform: scale(0.5, 0.5);
+    background-color: transparent;
 
-.delete-btn:hover {
-    background-color: #c0392b;
 }
 
 .footer-container{
