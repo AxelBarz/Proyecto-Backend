@@ -147,28 +147,77 @@ label, input, select{
     margin-bottom: 40px;
     border: 3px solid #ccc;
 }
-
-#boton, input[type="reset"]{
-    height: 50px;
-    width: 25%;
-    cursor: pointer;
-    background-color: #595956;
-    color:#f0f2f2;
-    font-size: 18px;
-    font-family: "Fjalla One",sans-serif;
-    border:none;
-    transition: all 0.2s linear;
-}
-#boton:hover{
-    background-color: #006400;
-}
-input[type="reset"]:hover{
-    background-color: #8B0000;;
-}
-#boton{
+.button {
     position: relative;
-    top: 5px;
-    border-radius: 5px;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #732222;
+    background-size: 400%;
+    color: #F0F2F2;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+.button-content {
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+    82.3deg,
+    #0d0d0d 10.8%,
+    #006400 94.3%
+    );
+    transition: all 0.475s;
+}
+.button2 {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #732222;
+    background-size: 400%;
+    color: #F0F2F2;
+    border: none;
+    cursor: pointer;
+}
+
+.button2:hover::before {
+    transform: scaleX(1);
+}
+.button2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+    82.3deg,
+    #0d0d0d 10.8%,
+    #8B0000 94.3%
+    );
+    transition: all 0.475s;
 }
 
 footer{
